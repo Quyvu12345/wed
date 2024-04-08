@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai thuc hanh</title>
+</head>
+<body>
+    <form id="registrationForm">
+        <div>
+            <label for="fullName">Họ và tên:</label>
+            <input type="text" id="fullName" name="fullName">
+            <div id="fullNameError" style="color: red;"></div>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <div id="emailError" style="color: red;"></div>
+        </div>
+        <div>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password">
+            <div id="passwordError" style="color: red;"></div>
+        </div>
+        <div>
+            <label for="confirmPassword">Xác nhận mật khẩu:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword">
+            <div id="confirmPasswordError" style="color: red;"></div>
+        </div>
+        <div>
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" name="address">
+            <div id="addressError" style="color: red;"></div>
+        </div>
+        <div>
+            <label for="phoneNumber">Số điện thoại:</label>
+            <input type="text" id="phoneNumber" name="phoneNumber">
+            <div id="phoneNumberError" style="color: red;"></div>
+        </div>
+        <button type="button" onclick="validateForm()">Đăng ký</button>
+    </form>
+    <script src="validateForm.js"></script>
+</body>
+</html>
